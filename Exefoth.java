@@ -1,12 +1,6 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
-
-class Equation {
+class Exefoth {
 	public static void main(String[] args) {
-		Equation eq = new Equation();
-		String result = eq.getSolution("2? + ?5 = 69");
+		String result = getSolution("2? + ?5 = 69");
 		System.out.println(result);
 	}
 
