@@ -9,9 +9,13 @@ public class Algoritm1 {
 		// counter));
 		// System.out.println(counter.get());
 		// System.out.println(sum2(25));
-		counter.set(0);
-		System.out.println(findSimple(500, counter));
-		System.out.println(counter.get());
+		// counter.set(0);
+		// System.out.println(findSimple(500, counter));
+		// System.out.println(counter.get());
+		long starTime = System.currentTimeMillis();
+		System.out.println(fibo(38, counter));
+		long wndTime = System.currentTimeMillis();
+		System.out.println(counter.get() + " " + (starTime - wndTime));
 	}
 
 	public static int sum(int lastNumber, AtomicInteger counter) {
@@ -45,7 +49,10 @@ public class Algoritm1 {
 		return numbers;
 	}
 
-	public static fibo(){
-		
+	public static int fibo(int n, AtomicInteger counter) {
+		counter.getAndIncrement();
+		if (n == 1 || n == 2)
+			return 1;
+		return fibo(n - 1, counter) + fibo(n - 2, counter);
 	}
 }
