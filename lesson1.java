@@ -23,7 +23,11 @@ public class Lesson1 {
 		// =================================================================
 		// task1();
 		// =================================================================
-		task2();
+		// task2();
+		// =================================================================
+		// task3("Hello to Java script!");
+		// =================================================================
+		task4(4, 2);
 	}
 
 	static void task1() {
@@ -61,5 +65,30 @@ public class Lesson1 {
 		// System.out.println(tempo[i]);
 		// }
 		System.out.println(Arrays.toString(tempo));
+	}
+
+	static void task3(String str) {
+		StringBuilder stb = new StringBuilder();
+		String[] word = str.split(" ");
+		for (int i = 0; i < word.length; i++) {
+			stb.append(word[word.length - 1 - i]).append(" ");
+		}
+		System.out.println(stb.toString());
+	}
+
+	static void task4(int num, int num2) {
+		double result = num;
+		if (num2 > 0) {
+			for (int i = 1; i < num2; i++) {
+				result *= num;
+			}
+		} else if (num2 < 0) {
+			for (int i = 0; i < Math.abs(num2); i++) {
+				result /= num;
+			}
+		} else {
+			result = 1;
+		}
+		System.out.println(result);
 	}
 }
