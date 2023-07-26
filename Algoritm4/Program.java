@@ -13,7 +13,7 @@ public class Program {
 
 		String search = hashMap.get("+79265298764");
 
-		for (HashMap.Entity entity : hashMap) {
+		for (HashMap.Entity entity : HashMap.HashMapIterator()) {
 			System.out.printf(String.valueOf(entity.key) + ":" + String.valueOf(entity.value));
 		}
 	}

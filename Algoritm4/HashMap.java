@@ -9,24 +9,27 @@ public class HashMap<K, V> implements Iterable<HashMap.Entity> {
 	private Bucket[] buckets;
 	private int size;
 	private static final double LOAD_FACTOR = 0.5;
+	private Entity start;
 
 	public int getSize() {
 		return size;
 	}
 
-	private class HashMapIterator implements Iterator<Entity> {
-		private int currentIndex;
+	@Override
+	public Iterator<Entity> iterator() {
+		return new HashMapIterator(start);
+	}
+
+	public class HashMapIterator implements Iterator<Entity> {
 		private Entity currentEntity;
 		private Entity nextEntity;
 
-		public HashMapIterator() {
-			currentIndex = 0;
-			currentEntity = null;
-			nextEntity = null;
+		public HashMapIterator(Entity currentEntity) {
+			this.currentEntity = currentEntity;
 		}
 
 		public boolean hasNext() {
-			return nextEntity != null;
+			return currentEntity != null;
 		}
 
 		public Entity next() {
@@ -169,11 +172,6 @@ public class HashMap<K, V> implements Iterable<HashMap.Entity> {
 			size--;
 		}
 		return res;
-	}
-
-	@Override
-	public Iterator<Entity> iterator() {
-		return new HashMapIterator();
 	}
 
 	public HashMap() {
