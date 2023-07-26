@@ -1,6 +1,9 @@
 package Algoritm4;
 
-public class HashMap<K, V> {
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+public class HashMap<K, V> implements Iterable<HashMap.Entity> {
 
 	private static final int INT_BUCKET_COUNT = 16;
 	private Bucket[] buckets;
@@ -11,9 +14,36 @@ public class HashMap<K, V> {
 		return size;
 	}
 
-	class Entity {
+	private class HashMapIterator implements Iterator<Entity> {
+		private int currentIndex;
+		private Entity currentEntity;
+		private Entity nextEntity;
+
+		public HashMapIterator() {
+			currentIndex = 0;
+			currentEntity = null;
+			nextEntity = null;
+		}
+
+		public boolean hasNext() {
+			return nextEntity != null;
+		}
+
+		public Entity next() {
+			currentEntity = nextEntity;
+			return currentEntity;
+		}
+
+	}
+
+	class Entity<K, V> {
 		K key;
 		V value;
+
+		public Entity(K key, V value) {
+			this.key = key;
+			this.value = value;
+		}
 	}
 
 	class Bucket<K, V> {
@@ -85,7 +115,7 @@ public class HashMap<K, V> {
 	}
 
 	private void recalculation() {
-		size = 0;
+		size = 1;
 		Bucket<K, V>[] old = buckets;
 		buckets = new Bucket[size * 2];
 		for (int i = 0; i < old.length; i++) {
@@ -141,11 +171,16 @@ public class HashMap<K, V> {
 		return res;
 	}
 
+	@Override
+	public Iterator<Entity> iterator() {
+		return new HashMapIterator();
+	}
+
 	public HashMap() {
 		buckets = new Bucket[INT_BUCKET_COUNT];
 	}
 
-	public HashMap(int initCount) {
-		buckets = new Bucket[initCount];
+	public HashMap(int income) {
+		buckets = new Bucket[income];
 	}
 }

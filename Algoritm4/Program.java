@@ -12,5 +12,9 @@ public class Program {
 		v = hashMap.put("+79265298764", "Sergei");
 
 		String search = hashMap.get("+79265298764");
+
+		for (HashMap.Entity entity : hashMap) {
+			System.out.printf(String.valueOf(entity.key) + ":" + String.valueOf(entity.value));
+		}
 	}
 }
