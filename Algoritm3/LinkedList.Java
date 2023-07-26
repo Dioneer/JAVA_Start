@@ -14,11 +14,14 @@ public class LinkedList<T> {
 		}
 		head = node;
 	}
+
 	public void deleteFirst(){
+		Node node = head;
 		if (head != null){
-			head = head.next;
+			head = node.next;
 		}
 	}
+
 	public Node search(T value){
 		Node node = head;
 		while(node != null){
@@ -29,11 +32,12 @@ public class LinkedList<T> {
 		}
 		return null;
 	}
+
 	public void sort(Comparator<T> comparator){
 		Node node = head;
 		while(node != null){
 			Node minValueNode = node;
-			Node nodeForeSecondCycle = node = node.next;
+			Node nodeForeSecondCycle = node.next;
 			while(nodeForeSecondCycle != null){
 				if(comparator.compare(minValueNode.value, nodeForeSecondCycle.value)>0){
 					minValueNode = nodeForeSecondCycle;
@@ -91,9 +95,11 @@ public class LinkedList<T> {
 
 		while (node != null)
 		{
-				temp = node.Next;
-				node.Next = prevNode;
+				temp = node.next;
+				// в след. кладем узел
+				node.next = prevNode;
 				prevNode = node;
+				// в узел следующее
 				node = temp;
 		}
 		head = prevNode;
