@@ -60,7 +60,7 @@ public class Homework2 {
 	// }
 	// // logger.info(Arrays.toString(mas));
 	// }
-	// fileWriter.write(dateFormat.format(new Date(temp)) + " " +
+	// fileWriter.write(dateFormat.format(new Date()) + " " +
 	// Arrays.toString(mas) + "\n");
 	// }
 	// fileWriter.flush();
