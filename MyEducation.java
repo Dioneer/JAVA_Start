@@ -7,8 +7,11 @@ import java.nio.Buffer;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Formatter;
+import java.util.*;
 import java.util.Scanner;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
@@ -20,10 +23,10 @@ import java.util.logging.SimpleFormatter;
 
 public class MyEducation {
 	public static void main(String[] args) {
-		var a = 123;
-		var b = 123.12;
-		char k = 'a';
-		String s = "qwerty";
+		// var a = 123;
+		// var b = 123.12;
+		// char k = 'a';
+		// String s = "qwerty";
 		// System.out.println(s.indexOf('y'));
 		// System.out.println(getType(a));
 		// System.out.println(getType(b));
@@ -38,6 +41,8 @@ public class MyEducation {
 		// ====================================================================================
 		// LocalTime time = LocalTime.now();
 		// System.out.println(time.getHour());
+		// long k = System.currentTimeMillis();
+		// System.out.println(k);
 		// ====================================================================================
 		// try {
 		// FileWriter file = new FileWriter("study.txt", true);
@@ -116,9 +121,47 @@ public class MyEducation {
 		// }
 		// fileHandler.close();
 		// logger.getHandlers()[0].close();
+		// ====================================================================================
+		int[] a = new int[] { 1, 9 };
+		int[] b = new int[6];
+		System.arraycopy(a, 0, b, 0, a.length);
+		for (int i : b) {
+			System.out.println(i);
+		}
+		for (int i : a) {
+			System.out.println(i);
+		}
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(48);
+		for (Object i : list) {
+			System.out.println(i);
+		}
+		StringBuilder f = new StringBuilder("a");
+		StringBuilder g = new StringBuilder("f");
+		StringBuilder h = new StringBuilder("g");
+		StringBuilder[] arr = new StringBuilder[] { f, g, h };
+		List<StringBuilder> array = Arrays.asList(arr);
+		for (StringBuilder stringBuilder : array) {
+			System.out.println(stringBuilder);
+		}
+		Character value = null;
+		List<Character> list1 = new ArrayList<Character>();
+		// Character[] arr1 = new Character[] { 'E', 'l', 'e', 'n', 'a' };
+		// list1 = Arrays.asList(arr1);
+		list1.add('E');
+		list1.add('l');
+		list1.add('e');
+		list1.add('n');
+		list1.add('a');
+		System.out.println(list1);
+		list1.remove(1);
+		List<Character> list2 = List.copyOf(list1);
+		System.out.println(list2);
+
 	}
 
 	// private static String getType(Object o) {
-	// return o.getClass().getSimpleName();
+	// return o.getClass().getName();
 	// }
 }
