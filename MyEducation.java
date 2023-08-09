@@ -182,12 +182,12 @@ public class MyEducation {
 		// System.out.printf(i + ",");
 		// }
 
-		LinkedList<Integer> list = new LinkedList<Integer>();
-		list.add(0, 2);
-		list.add(1, 3);
-		list.add(2, 2);
-		list.set(0, 4);
-		list.remove(list.size() - 1);
-		System.out.println(list);
+		// LinkedList<Integer> list = new LinkedList<Integer>();
+		// list.add(0, 2);
+		// list.add(1, 3);
+		// list.add(2, 2);
+		// list.set(0, 4);
+		// list.remove(list.size() - 1);
+		// System.out.println(list);
 	}
 }
