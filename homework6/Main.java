@@ -28,10 +28,11 @@ public class Main {
 
 		for (Map.Entry entry : ask.entrySet()) {
 			System.out.println(
-					"Enter min value for filtering by " + entry.getValue() + " or press 0 if it dosen't metter: ");
+					"Enter min value for filtering by " + entry.getValue() + " or press 0 if it dosen't matter: ");
 			String value = scanner.nextLine();
 			filter.put((String) entry.getValue(), value);
 		}
+		scanner.close();
 
 		for (Notebook entry : note) {
 			if ((entry.getModel().equals(filter.get("model")) || filter.get("model").equals("0")) &&
@@ -43,7 +44,6 @@ public class Main {
 			}
 		}
 		System.out.println(showModels);
-		scanner.close();
 	}
 
 }
