@@ -13,12 +13,11 @@ public class Main {
 		Map<String, String> filter = new HashMap<>();
 		Set<Notebook> showModels = new HashSet<>();
 		Scanner scanner = new Scanner(System.in);
-		note.add(new Notebook("Model 1", 8, "Windows 10", "Black", 256));
-		note.add(new Notebook("Model 2", 16, "Windows 10", "Silver", 500));
-		note.add(new Notebook("Model 3", 8, "MacOS", "Grey", 800));
-		note.add(new Notebook("Model 4", 16, "Linux", "White", 1000));
-		note.add(new Notebook("Model 5", 8, "Windows 10", "Black", 2000));
-		System.out.println();
+		note.add(new Notebook("Asser", 8, "Windows 10", "Black", 256));
+		note.add(new Notebook("Acer", 16, "Windows 10", "Silver", 500));
+		note.add(new Notebook("Acer", 8, "MacOS", "Grey", 800));
+		note.add(new Notebook("Lenovo", 16, "Linux", "White", 1000));
+		note.add(new Notebook("Asser", 8, "Windows 10", "Black", 2000));
 
 		ask.put(1, "model");
 		ask.put(2, "ram");
@@ -43,7 +42,10 @@ public class Main {
 				showModels.add(entry);
 			}
 		}
-		System.out.println(showModels);
+		System.out.println("Usefull models:");
+		for (Notebook notebook : showModels) {
+			System.out.println(notebook);
+		}
 	}
 
 }
