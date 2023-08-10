@@ -45,7 +45,6 @@ public class Phonebook {
 			}
 		}
 		int index = minValue;
-		System.out.println(index);
 		while (index <= maxValue) {
 			for (var entry : phoneBook.entrySet()) {
 				if (entry.getValue().size() == index) {

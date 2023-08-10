@@ -189,5 +189,15 @@ public class MyEducation {
 		// list.set(0, 4);
 		// list.remove(list.size() - 1);
 		// System.out.println(list);
+
+		int[] a = new int[] { 1, 9 };
+		int[] b = new int[4];
+		System.arraycopy(a, 0, b, 0, a.length);
+		for (int i : b) {
+			System.out.println(i);
+		}
+		for (int i : a) {
+			System.out.println(i);
+		}
 	}
 }
