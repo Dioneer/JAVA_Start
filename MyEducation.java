@@ -190,14 +190,103 @@ public class MyEducation {
 		// list.remove(list.size() - 1);
 		// System.out.println(list);
 
-		int[] a = new int[] { 1, 9 };
-		int[] b = new int[4];
-		System.arraycopy(a, 0, b, 0, a.length);
-		for (int i : b) {
-			System.out.println(i);
-		}
-		for (int i : a) {
-			System.out.println(i);
-		}
+		// int[] a = new int[] { 1, 9 };
+		// int[] b = new int[4];
+		// System.arraycopy(a, 0, b, 0, a.length);
+		// for (int i : b) {
+		// System.out.println(i);
+		// }
+		// for (int i : a) {
+		// System.out.println(i);
+		// }
 	}
+	// =============================================================================================
+	// общая куча переделала
+	// =============================================================================================
+	// public static void add(int num, char c1, char c2) {
+	// StringBuilder stringbuilder = new StringBuilder();
+	// for (int i = 0; i < num / 2; i++) {
+	// stringbuilder.append(c1).append(c2).append('-');
+	// }
+	// System.out.println(stringbuilder.toString());
+	// }
+
+	// public static void show(String str) {
+	// StringBuilder stringbuilder = new StringBuilder();
+	// int count = 0;
+	// char[] arr = str.toCharArray();
+	// Arrays.sort(arr);
+	// System.out.println(arr);
+	// for (int i = 1; i < arr.length; i++) {
+	// if (arr[i] == arr[i - 1]) {
+	// count++;
+	// } else {
+	// count++;
+	// stringbuilder.append(arr[i - 1]).append(count);
+	// count = 0;
+	// }
+	// }
+	// System.out.println(stringbuilder.toString());
+	// }
+
+	// public static void reverse(String str) {
+	// StringBuilder stringBuilder = new StringBuilder(str);
+	// String str2 = stringBuilder.reverse().toString();
+	// System.out.println(str.equals(str2));
+	// }
+
+	// public static void writeFile(String str) {
+	// String pathProject = System.getProperty("user.dir");
+	// String filePath = pathProject.concat("\\lesson6\\log.txt");
+	// File file = new File(filePath);
+	// try {
+	// FileWriter writeFile = new FileWriter(file, true);
+	// writeFile.append(str);
+	// writeFile.flush();
+	// writeFile.close();
+	// } catch (IOException ex) {
+	// System.out.println(ex.getMessage());
+	// }
+	// }
+
+	// public static void loggerFile() {
+	// String pathProject = System.getProperty("user.dir");
+	// String filePath = pathProject.concat("asdasd/sstudy/log.txt");
+	// Logger logger = Logger.getLogger(Main.class.getName());
+	// File file = new File(filePath);
+	// FileHandler handler = null;
+	// try {
+	// handler = new FileHandler("log.txt", true);
+	// } catch (IOException ex) {
+	// System.out.println(ex.getMessage());
+	// }
+	// SimpleFormatter formatt = new SimpleFormatter();
+	// handler.setFormatter(formatt);
+	// logger.addHandler(handler);
+
+	// try {
+	// FileWriter writeFile = new FileWriter(file, true);
+	// writeFile.append("ho-ho");
+	// writeFile.flush();
+	// writeFile.close();
+	// } catch (IOException ex) {
+	// System.out.println(ex.getMessage());
+	// logger.log(Level.SEVERE, ex.getMessage());
+	// }
+	// handler.close();
+	// logger.getHandlers()[0].close();
+	// }
+	// public static void shop(String janre, String athor, List<List<String>> books)
+	// {
+	// for (int i = 0; i < books.size(); i++) {
+	// if (books.get(i).get(0).equals(janre)) {
+	// books.get(i).add(athor);
+	// return;
+	// }
+	// }
+	// List<String> newList = new ArrayList<String>();
+	// newList.add(janre);
+	// newList.add(athor);
+	// books.add(newList);
+	// }
 }

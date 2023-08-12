@@ -1,25 +1,2 @@
-июл. 27, 2023 7:06:41 PM MyEducation main
-SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-июл. 27, 2023 7:07:17 PM MyEducation main
-SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-июл. 27, 2023 7:23:31 PM MyEducation main
-SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-июл. 27, 2023 7:32:52 PM MyEducation main
-SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:38:10 SEVERE MyEducation main D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:39:00 SEVERE MyEducation main D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:39:21 SEVERE MyEducation main2023-07-27 19:39:36 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:40:08 SEVERE D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:40:27 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:40:39 
-2023-07-27 19:41:24 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:42:26 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:43:15 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:43:39 $s
-2023-07-27 19:44:10 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023 7 45 45 PM MyEducation main
-SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023 7 46 06 PM SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023 7 35 PM SEVERE: D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
-2023-07-27 19:46:52 D:\backup\4\Javaasdasd\sstudy.txt (Системе не удается найти указанный путь)
+авг. 11, 2023 2:25:27 PM lesson6.Main loggerFile
+SEVERE: D:\backup\4\Javaasdasd\sstudy\log.txt (Системе не удается найти указанный путь)
